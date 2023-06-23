@@ -1,0 +1,199 @@
+:root {
+  color-scheme: light dark;
+
+  /* Dark mode background tones (near black)*/
+  --dk-p-h: 240;
+  --dk-p-s: 30%;
+  --dk-p-l: 10%;
+
+  /* Dark mode foreground tones (near white) */
+  --dk-s-h: 240;
+  --dk-s-s: 10%;
+  --dk-s-l: 95%;
+
+  /* Dark mode accent tones (high saturation tones) */
+  --dk-a-h: 40;
+  --dk-a-s: 100%;
+  --dk-a-l: 50%;
+
+
+  --dk-primary-bold: hsl(var(--dk-p-h),var(--dk-p-s),var(--dk-p-l)) ;
+  --dk-primary-dim: hsl(var(--dk-p-h), calc(var(--dk-p-s) - 10%), calc(var(--dk-p-l) + 25%));
+  --dk-primary-muted: hsl(var(--dk-p-h), calc(var(--dk-p-s) - 20%), calc(var(--dk-p-l) + 30%) );
+
+  --dk-p-alpha-900: hsla(var(--dk-p-h), var(--dk-p-s), var(--dk-p-l), 0.8);
+  --dk-p-alpha-500: hsla(var(--dk-p-h), var(--dk-p-s), var(--dk-p-l), 0.5);
+  --dk-p-alpha-100: hsla(var(--dk-p-h), var(--dk-p-s), var(--dk-p-l), 0.1);
+
+  --dk-secondary-bold: hsl(var(--dk-s-h),var(--dk-s-s),var(--dk-s-l));
+  --dk-secondary-dim: hsl(var(--dk-s-h), calc(var(--dk-s-s) + 10%), calc(var(--dk-s-l) - 15%));
+  --dk-secondary-muted: hsl(var(--dk-s-h), calc(var(--dk-s-s) + 5%), calc(var(--dk-s-l) - 20%) );
+
+  --dk-s-alpha-900: hsla(var(--dk-s-h), var(--dk-s-s), var(--dk-s-l), 0.8);
+  --dk-s-alpha-500: hsla(var(--dk-s-h), var(--dk-s-s), var(--dk-s-l), 0.5);
+  --dk-s-alpha-100: hsla(var(--dk-s-h), var(--dk-s-s), var(--dk-s-l), 0.1);
+
+  --dk-accent-bold: hsl(var(--dk-a-h),var(--dk-a-s),var(--dk-a-l));
+  --dk-accent-dim: hsl(var(--dk-a-h), calc(var(--dk-a-s) - 10%), calc(var(--dk-a-l) + 25%));
+  --dk-accent-muted: hsl(var(--dk-a-h), calc(var(--dk-a-s) - 20%), calc(var(--dk-a-l) + 30%) );
+
+  --dk-a-alpha-900: hsla(var(--dk-a-h), var(--dk-a-s), var(--dk-a-l), 0.8);
+  --dk-a-alpha-500: hsla(var(--dk-a-h), var(--dk-a-s), var(--dk-a-l), 0.5);
+  --dk-a-alpha-100: hsla(var(--dk-a-h), var(--dk-a-s), var(--dk-a-l), 0.1);
+
+  /* Light mode background tones (bright or near white tones) */
+  --lt-p-h: 240;
+  --lt-p-s: 20%;
+  --lt-p-l: 85%;
+
+  /* Light mode foreground tones (near black tones)*/
+  --lt-s-h: 240;
+  --lt-s-s: 10%;
+  --lt-s-l: 15%;
+
+  /* Light mode accent tones (high saturation tones dark enough to contrast primary tones)*/
+  --lt-a-h: 40;
+  --lt-a-s: 100%;
+  --lt-a-l: 20%;
+
+
+  --lt-primary-bold: hsl(var(--lt-p-h),var(--lt-p-s),var(--lt-p-l)) ;
+  --lt-primary-dim: hsl(var(--lt-p-h), calc(var(--lt-p-s) - 10%), calc(var(--lt-p-l) + 25%));
+  --lt-primary-muted: hsl(var(--lt-p-h), calc(var(--lt-p-s) - 20%), calc(var(--lt-p-l) + 30%) );
+
+  --lt-p-alpha-900: hsla(var(--lt-p-h), var(--lt-p-s), var(--lt-p-l), 0.8);
+  --lt-p-alpha-500: hsla(var(--lt-p-h), var(--lt-p-s), var(--lt-p-l), 0.5);
+  --lt-p-alpha-100: hsla(var(--lt-p-h), var(--lt-p-s), var(--lt-p-l), 0.1);
+
+  --lt-secondary-bold: hsl(var(--lt-s-h),var(--lt-s-s),var(--lt-s-l));
+  --lt-secondary-dim: hsl(var(--lt-s-h), calc(var(--lt-s-s) + 10%), calc(var(--lt-s-l) - 15%));
+  --lt-secondary-muted: hsl(var(--lt-s-h), calc(var(--lt-s-s) + 5%), calc(var(--lt-s-l) - 20%) );
+
+  --lt-s-alpha-900: hsla(var(--lt-s-h), var(--lt-s-s), var(--lt-s-l), 0.8);
+  --lt-s-alpha-500: hsla(var(--lt-s-h), var(--lt-s-s), var(--lt-s-l), 0.5);
+  --lt-s-alpha-100: hsla(var(--lt-s-h), var(--lt-s-s), var(--lt-s-l), 0.1);
+
+  --lt-accent-bold: hsl(var(--lt-a-h),var(--lt-a-s),var(--lt-a-l));
+  --lt-accent-dim: hsl(var(--lt-a-h), calc(var(--lt-a-s) - 10%), calc(var(--lt-a-l) + 25%));
+  --lt-accent-muted: hsl(var(--lt-a-h), calc(var(--lt-a-s) - 20%), calc(var(--lt-a-l) + 30%) );
+
+  --lt-a-alpha-900: hsla(var(--lt-a-h), var(--lt-a-s), var(--lt-a-l), 0.8);
+  --lt-a-alpha-500: hsla(var(--lt-a-h), var(--lt-a-s), var(--lt-a-l), 0.5);
+  --lt-a-alpha-100: hsla(var(--lt-a-h), var(--lt-a-s), var(--lt-a-l), 0.1);
+
+}
+
+
+[data-theme="light"] {
+  --primary-bold: var(--lt-primary-bold);
+  --primary-dim: var(--lt-primary-dim);
+  --primary-muted: var(--lt-primary-muted);
+
+  --p-alpha-900: var(--lt-p-alpha-900);
+  --p-alpha-500: var(--lt-p-alpha-500);
+  --p-alpha-100: var(--lt-p-alpha-100);
+
+  --secondary-bold: var(--lt-secondary-bold);
+  --secondary-dim: var(--lt-secondary-dim);
+  --secondary-muted: var(--lt-secondary-muted);
+
+  --s-alpha-900: var(--lt-s-alpha-900);
+  --s-alpha-500: var(--lt-s-alpha-500);
+  --s-alpha-100: var(--lt-s-alpha-100);
+
+  --accent-bold: var(--lt-accent-bold);
+  --accent-dim: var(--lt-accent-dim);
+  --accent-muted: var(--lt-accent-muted);
+
+  --a-alpha-900: var(--lt-a-alpha-900);
+  --a-alpha-500: var(--lt-a-alpha-500);
+  --a-alpha-100: var(--lt-a-alpha-100);
+}
+
+[data-theme="dark"] {
+  --primary-bold: var(--dk-primary-bold);
+  --primary-dim: var(--dk-primary-dim);
+  --primary-muted: var(--dk-primary-muted);
+
+  --p-alpha-900: var(--dk-p-alpha-900);
+  --p-alpha-500: var(--dk-p-alpha-500);
+  --p-alpha-100: var(--dk-p-alpha-100);
+
+  --secondary-bold: var(--dk-secondary-bold);
+  --secondary-dim: var(--dk-secondary-dim);
+  --secondary-muted: var(--dk-secondary-muted);
+
+  --s-alpha-900: var(--dk-s-alpha-900);
+  --s-alpha-500: var(--dk-s-alpha-500);
+  --s-alpha-100: var(--dk-s-alpha-100);
+
+  --accent-bold: var(--dk-accent-bold);
+  --accent-dim: var(--dk-accent-dim);
+  --accent-muted: var(--dk-accent-muted);
+
+  --a-alpha-900: var(--dk-a-alpha-900);
+  --a-alpha-500: var(--dk-a-alpha-500);
+  --a-alpha-100: var(--dk-a-alpha-100);
+}
+
+
+body {
+  font-family: Gordita, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--primary-bold);
+  color: var(--secondary-bold);
+  padding: 0;
+  margin: 0;
+}
+
+a, a.active {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--accent-dim);
+}
+
+a:hover {
+  color: var(--accent-muted);
+}
+
+main {
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto;
+  background-color: var(--s-alpha-100);
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+
+p {
+  max-width: 14rem;
+  margin: 2rem auto;
+  line-height: 1.35;
+}
+
+.heroicon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.theme-icon {
+  width: 3rem;
+  height: 2rem;
+}
+
+@media (min-width: 480px) {
+  main {
+    max-width: 75ch;
+    margin: 0 auto;
+  }
+  h1 {
+    max-width: none;
+  }
+
+  p {
+    max-width: none;
+  }
+}
