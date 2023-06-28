@@ -5,32 +5,22 @@ import { siteMap } from "./siteMap";
 
 import { bars, xMark, lightIcon, darkIcon } from "./icons";
 
-const htmlElement = document.querySelector("html")
-
-function setTheme() {
-  if (htmlClassList.contains("dark")) {
-    htmlElement.setAttribute("data-theme", "dark");
-    window.localStorage.removeItem("theme");
-  } else {
-    htmlClassList.add("dark");
-    window.localStorage.setItem("theme", "dark");
-  }
-}
-
 
 export default function({ home }: Object) {
 
   const [showMenu, setShowMenu] = createSignal(false);
   const [lightMode, setLightMode] = createSignal(true);
 
+
   function toggleTheme(theme: String) {
+    const htmlElement = document.querySelector("html")
 
     if (theme === "dark") {
-      htmlElement?.setAttribute("data-theme", "dark");
+      htmlElement.setAttribute("data-theme", "dark");
       setLightMode(false);
       window.localStorage.setItem("theme", "dark");
     } else if (theme === "light") {
-      htmlElement?.setAttribute("data-theme", "light")
+      htmlElement.setAttribute("data-theme", "light")
       setLightMode(true);
       window.localStorage.setItem("theme", "light");
     }
